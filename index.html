@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -147,6 +148,12 @@
                 </div>
                 <div class="books__line"></div>
             </div>
+            <button class="books__nav books__nav--prev" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="books__nav books__nav--next" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
             <div class="books__grid">
                 <div class="books__item">
                     <img src="img/general.webp" alt="Book 1" class="books__image">
@@ -485,35 +492,35 @@
                         </div>
                     </div>
 
-                    <!-- Trung Nguyen Banner -->
-                    <div class="trung-nguyen-banner">
-                        <div class="trung-nguyen-banner__container">
-                            <div class="trung-nguyen-banner__main">
-                                <div class="trung-nguyen-banner__background">
-                                    <img src="img/trungnguyen_bg.webp" alt="Trung Nguyen background" class="trung-nguyen-banner__bg-image">
+                    <!-- Featured Brand -->
+                    <div class="featured-brand">
+                        <div class="featured-brand__container">
+                            <div class="featured-brand__main">
+                                <div class="featured-brand__background">
+                                    <img src="img/trungnguyen_bg.webp" alt="Featured brand background" class="featured-brand__bg-image">
                                 </div>
                                 
-                                <div class="trung-nguyen-banner__overlay">
-                                    <div class="trung-nguyen-banner__articles">
-                                        <div class="trung-nguyen-banner__article trung-nguyen-banner__article--featured">
-                                            <img src="img/screen_shot_2025_08_17_at_110953.webp" alt="Trung Nguyen store" class="trung-nguyen-banner__article-image">
-                                            <div class="trung-nguyen-banner__article-content">
-                                                <h4 class="trung-nguyen-banner__article-title">Trung Nguyên Legend tiếp tục mở rộng hệ thống quán...</h4>
+                                <div class="featured-brand__overlay">
+                                    <div class="featured-brand__articles">
+                                        <div class="featured-brand__article featured-brand__article--featured">
+                                            <img src="img/screen_shot_2025_08_17_at_110953.webp" alt="Featured brand store" class="featured-brand__article-image">
+                                            <div class="featured-brand__article-content">
+                                                <h4 class="featured-brand__article-title">Trung Nguyên Legend tiếp tục mở rộng hệ thống quán...</h4>
                                             </div>
                                         </div>
                                         
-                                        <div class="trung-nguyen-banner__bottom-articles">
-                                            <div class="trung-nguyen-banner__article trung-nguyen-banner__article--small">
-                                                <img src="img/vang_mieng_sjc_duy_hieu.webp" alt="Coffee portrait" class="trung-nguyen-banner__article-image">
-                                                <div class="trung-nguyen-banner__article-content">
-                                                    <h4 class="trung-nguyen-banner__article-title">Cà phê và sự phát triển bền vững</h4>
+                                        <div class="featured-brand__bottom-articles">
+                                            <div class="featured-brand__article featured-brand__article--small">
+                                                <img src="img/vang_mieng_sjc_duy_hieu.webp" alt="Coffee portrait" class="featured-brand__article-image">
+                                                <div class="featured-brand__article-content">
+                                                    <h4 class="featured-brand__article-title">Cà phê và sự phát triển bền vững</h4>
                                                 </div>
-                </div>
+                                            </div>
 
-                                            <div class="trung-nguyen-banner__article trung-nguyen-banner__article--small">
-                                                <img src="img/Party.webp" alt="Third image" class="trung-nguyen-banner__article-image">
-                                                <div class="trung-nguyen-banner__article-content">
-                                                    <h4 class="trung-nguyen-banner__article-title">Hành trình từ trái tim đến thành công</h4>
+                                            <div class="featured-brand__article featured-brand__article--small">
+                                                <img src="img/Party.webp" alt="Third image" class="featured-brand__article-image">
+                                                <div class="featured-brand__article-content">
+                                                    <h4 class="featured-brand__article-title">Hành trình từ trái tim đến thành công</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,27 +577,42 @@
                             <div class="lifestyle__small-articles">
                                 <div class="lifestyle__small-item">
                                     <img src="img/FILE_PHOTO_Giorgio_Armani_Prive.webp" alt="Giorgio Armani" class="lifestyle__small-image">
-                                    <h6 class="lifestyle__small-title">'Ông vua' thời trang Italy Giorgio Armani qua đời</h6>
+                                    <div class="lifestyle__small-content">
+                                        <h6 class="lifestyle__small-title">'Ông vua' thời trang Italy Giorgio Armani qua đời</h6>
+                                        <p class="lifestyle__small-time">14:02 9/9/2025</p>
+                                    </div>
                                 </div>
                                 
                                 <div class="lifestyle__small-item">
                                     <img src="img/f_r_USTA1981623_20250828_USO_PS1.webp" alt="Tennis champion" class="lifestyle__small-image">
-                                    <h6 class="lifestyle__small-title">Đương kim số 1 tennis đeo Rolex 40.000 USD</h6>
+                                    <div class="lifestyle__small-content">
+                                        <h6 class="lifestyle__small-title">Đương kim số 1 tennis đeo Rolex 40.000 USD</h6>
+                                        <p class="lifestyle__small-time">13:12 9/9/2025</p>
+                                    </div>
                                 </div>
                                 
                                 <div class="lifestyle__small-item">
                                     <img src="img/ABC.webp" alt="Military couple" class="lifestyle__small-image">
-                                    <h6 class="lifestyle__small-title">3 nụ hôn khó quên ở A80</h6>
+                                    <div class="lifestyle__small-content">
+                                        <h6 class="lifestyle__small-title">3 nụ hôn khó quên ở A80</h6>
+                                        <p class="lifestyle__small-time">09:58 9/9/2025</p>
+                                    </div>
                                 </div>
                                 
                                 <div class="lifestyle__small-item">
                                     <img src="img/lo_tan.webp" alt="Mural controversy" class="lifestyle__small-image">
-                                    <h6 class="lifestyle__small-title">Tranh tường 'Lỗ Tấn hút thuốc' gây tranh cãi</h6>
-                        </div>
+                                    <div class="lifestyle__small-content">
+                                        <h6 class="lifestyle__small-title">Tranh tường 'Lỗ Tấn hút thuốc' gây tranh cãi</h6>
+                                        <p class="lifestyle__small-time">07:48 9/9/2025</p>
+                                    </div>
+                                </div>
                                 
                                 <div class="lifestyle__small-item">
                                     <img src="img/PQA.webp" alt="Young woman" class="lifestyle__small-image">
-                                    <h6 class="lifestyle__small-title">Cô gái 27 tuổi chật vật trả nợ 25.000 USD, hối hận chi tiêu xa hoa</h6>
+                                    <div class="lifestyle__small-content">
+                                        <h6 class="lifestyle__small-title">Cô gái 27 tuổi chật vật trả nợ 25.000 USD, hối hận chi tiêu xa hoa</h6>
+                                        <p class="lifestyle__small-time">06:30 9/9/2025</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1179,8 +1201,8 @@
                             <button class="video__control-btn video__mute">
                                 <i class="fas fa-volume-mute"></i>
                             </button>
-                            <button class="video__control-btn video__pause">
-                                <i class="fas fa-pause"></i>
+                            <button class="video__control-btn video__play">
+                                <i class="fas fa-play"></i>
                             </button>
                         </div>
                     </div>
@@ -1246,7 +1268,7 @@
 
                         <div class="video__item" data-video="fJ9rUzIMcZQ" data-title="Tuyển Việt Nam lép vế trước dàn ngoại binh của Nam Định" data-category="THỂ THAO">
                             <div class="video__thumbnail">
-                                <img src="https://www.youtube.com/watch?v=kl3zCy1UnAM" alt="Tuyển Việt Nam lép vế trước dàn ngoại binh của Nam Định" loading="lazy">
+                                <img src="https://img.youtube.com/vi/fJ9rUzIMcZQ/hqdefault.jpg" alt="Tuyển Việt Nam lép vế trước dàn ngoại binh của Nam Định" loading="lazy">
                                 <div class="video__play-icon">
                                     <i class="fas fa-play"></i>
                                 </div>
@@ -1271,12 +1293,12 @@
                     <p>Giấy phép báo chí: số 75/GP-BTTTT và số 442/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày
                         26/02/2020 và ngày 29/11/2023</p>
                     <p>Phó tổng biên tập phụ trách: Lâm Quang Hiếu</p>
-                    <p>© Toàn bộ bản quyền thuộc Tri Thức</p>
                 </div>
                 <div class="footer__right">
                     <p>Tòa soạn: Tầng 10, D29 Phạm Văn Bạch, phường Cầu Giấy, Hà Nội</p>
                     <p>Hotline: 0931.222.666</p>
                     <p class="footer__contact">Liên hệ: <a href="mailto:toasoan@znews.vn">toasoan@znews.vn</a></p>
+                    <p>© Toàn bộ bản quyền thuộc Tri Thức</p>
                 </div>
             </div>
         </div>
@@ -1298,7 +1320,7 @@
             }
         });
 
-        // Lazy loading for images
+       
         if ('IntersectionObserver' in window) {
             const imageObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -1400,7 +1422,134 @@
                 });
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const isMobile = window.innerWidth <= 768;
+            if (isMobile) {
+                const grid = document.querySelector('.books__grid');
+                const items = grid.querySelectorAll('.books__item');
+                const prevBtn = document.querySelector('.books__nav--prev');
+                const nextBtn = document.querySelector('.books__nav--next');
+
+                // Show navigation buttons on mobile
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+
+                let currentIndex = 0;
+
+                // Update buttons state
+                const updateButtons = () => {
+                    prevBtn.disabled = currentIndex === 0;
+                    nextBtn.disabled = currentIndex === items.length - 1;
+                };
+
+                // Scroll to item
+                const scrollToItem = (index) => {
+                    items[index].scrollIntoView({
+                        behavior: 'smooth',
+                        inline: 'center'
+                    });
+                    currentIndex = index;
+                    updateButtons();
+                };
+
+                // Button click handlers
+                prevBtn.addEventListener('click', () => {
+                    if (currentIndex > 0) {
+                        scrollToItem(currentIndex - 1);
+                    }
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    if (currentIndex < items.length - 1) {
+                        scrollToItem(currentIndex + 1);
+                    }
+                });
+
+                // Initial state
+                updateButtons();
+            }
+        });
+        
+        // Bottom Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const bottomNavItems = document.querySelectorAll('.bottom-nav__item');
+            
+            bottomNavItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all items
+                    bottomNavItems.forEach(navItem => {
+                        navItem.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked item
+                    this.classList.add('active');
+                    
+                    // Handle navigation based on index
+                    switch(index) {
+                        case 0: // CHUYÊN MỤC
+                            // Scroll to categories section
+                            const categoriesSection = document.querySelector('.categories');
+                            if (categoriesSection) {
+                                categoriesSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            break;
+                        case 1: // TIN MỚI
+                            // Scroll to top
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            break;
+                        case 2: // VIDEO
+                            // Scroll to video section
+                            const videoSection = document.querySelector('.video');
+                            if (videoSection) {
+                                videoSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            break;
+                        case 3: // PODCAST
+                            // Scroll to podcast section
+                            const podcastSection = document.querySelector('.podcast-banner');
+                            if (podcastSection) {
+                                podcastSection.scrollIntoView({ behavior: 'smooth' });
+                            }
+                            break;
+                    }
+                });
+            });
+            
+            // Set initial active state (TIN MỚI)
+            if (bottomNavItems.length > 1) {
+                bottomNavItems[1].classList.add('active');
+            }
+        });
     </script>
+
+    <!-- Bottom Navigation for Mobile -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav__item">
+            <div class="bottom-nav__icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <span class="bottom-nav__text">CHUYÊN MỤC</span>
+        </div>
+        <div class="bottom-nav__item">
+            <div class="bottom-nav__icon">
+                <i class="fas fa-newspaper"></i>
+            </div>
+            <span class="bottom-nav__text">TIN MỚI</span>
+        </div>
+        <div class="bottom-nav__item">
+            <div class="bottom-nav__icon">
+                <i class="fas fa-play"></i>
+            </div>
+            <span class="bottom-nav__text">VIDEO</span>
+        </div>
+        <div class="bottom-nav__item">
+            <div class="bottom-nav__icon">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <span class="bottom-nav__text">PODCAST</span>
+        </div>
+    </nav>
 </body>
 
 </html>
